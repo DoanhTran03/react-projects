@@ -1,13 +1,18 @@
 import ImageContainer from './ImageContainer'
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa"
+import { Review } from './ReviewContainer';
 
-const ReviewCard = () => {
+interface Props {
+    review: Review;
+}
+
+const ReviewCard = ({review} : Props) => {
   return (
       <div className="reviewCard">
-          <ImageContainer></ImageContainer>
-          <h3>Harry John</h3>
-          <p className='reviewCard__title'>HR</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro explicabo error eligendi est a ab ducimus consequatur perspiciatis hic culpa quia doloribus, facere quod neque temporibus repellendus in blanditiis veritatis.</p>
+          <ImageContainer imgURL={review.image}></ImageContainer>
+          <h3>{review.name}</h3>
+          <p className='reviewCard__title'>{review.job}</p>
+          <p>{review.text}</p>
           <div className="reviewCard__buttons">
               <button className='reviewCard__Chevbtn '>
                   <FaChevronLeft></FaChevronLeft>
