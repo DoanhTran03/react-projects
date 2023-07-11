@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,600&display=swap');
 :root {
-  --background-color: #D5DDF7;
-  --text-color: #1D2144;
-  --background-button-color: #C4CAFB;
+  --heading-color: rgb(16, 42, 66);
+  --job-title-color: rgb(73, 166, 233);
+  --text-color: rgb(97, 125, 152);
+  --background-color: rgb(241, 245, 248);
+  --background-button-color: rgb(235, 247, 255);
+}
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*-----Typography-----*/
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--background-color);
+  font-family: "Mulish", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+/*h1 used for slider container's heading while h3 used for slider list*/
+h1,h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+p {
+  color: rgb(97, 125, 152);
 }
