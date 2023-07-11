@@ -4,9 +4,12 @@ import { Review } from './ReviewContainer';
 
 interface Props {
     review: Review;
+    goBack : () => void;
+    goForward: () => void;
+    playRandom: () => void;
 }
 
-const ReviewCard = ({review} : Props) => {
+const ReviewCard = ({review, goBack, goForward, playRandom} : Props) => {
   return (
       <div className="reviewCard">
           <ImageContainer imgURL={review.image}></ImageContainer>
@@ -14,14 +17,14 @@ const ReviewCard = ({review} : Props) => {
           <p className='reviewCard__title'>{review.job}</p>
           <p>{review.text}</p>
           <div className="reviewCard__buttons">
-              <button className='reviewCard__Chevbtn '>
+              <button onClick={() => goBack()} className='reviewCard__Chevbtn '>
                   <FaChevronLeft></FaChevronLeft>
               </button>
-              <button className='reviewCard__Chevbtn'>
+              <button onClick={() => goForward()} className='reviewCard__Chevbtn'>
                   <FaChevronRight></FaChevronRight>
               </button>
           </div>
-          <button className='reviewCard__btn'>Suprise Me</button>
+          <button onClick={() => playRandom()} className='reviewCard__btn'>Suprise Me</button>
       </div>
   )
 }
