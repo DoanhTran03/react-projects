@@ -18,6 +18,10 @@ html {
   font-size: 62.5%;
 }
 body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
   background-color: var(--background-color);
   font-family: "Mulish", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
@@ -51,7 +55,6 @@ p {
   position: relative;
   margin-bottom: 24px;
 }
-
 .imageContainer__img {
   z-index: 1;
   position: relative;
@@ -60,7 +63,6 @@ p {
   width: 150px;
   height: 150px;
 }
-
 .imageContainer__icon {
   z-index: 2;
   top: 0;
@@ -76,7 +78,6 @@ p {
   font-size: 2rem;
   background-color: var(--job-title-color);
 }
-
 .imageContainer::before {
   top: -1rem;
   right: -1rem;
@@ -126,4 +127,20 @@ p {
   background-color: var(--job-title-color);
   color: var(--heading-color);
   transition: all 1s;
+}
+
+/*Review Container*/
+.reviewContainer {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+.reviewContainer__heading {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.reviewContainer__line {
+  margin: 0 auto;
+  height: 4px;
+  width: 80px;
+  background-color: var(--job-title-color);
 }

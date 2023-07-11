@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import "./index.css"
-import ImageContainer from './components/ImageContainer'
 import ReviewCard from './components/ReviewCard'
+import ReviewContainer from './components/ReviewContainer'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <ReviewCard></ReviewCard>
+      <ReviewContainer></ReviewContainer>
     </>
   )
 }

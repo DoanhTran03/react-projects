@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageContainer from './ImageContainer'
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa"
 
