@@ -1,4 +1,3 @@
-import React from 'react'
 import portrait from "../assets/pexels-cottonbro-studio-4100481.jpg"
 import {FaQuoteRight} from "react-icons/fa"
 
