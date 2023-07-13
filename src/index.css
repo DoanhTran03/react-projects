@@ -23,7 +23,6 @@ h1 {
   font-weight: 4rem;
 }
 h3 {
-  letter-spacing: 0.2rem;
   font-size: 1.6rem;
   color: var(--secondary-color);
 }
@@ -42,6 +41,7 @@ h4 {
   border-radius: 4px;
 }
 .foodItem__content .heading {
+  letter-spacing: 0.2rem;
   border-bottom: 0.5px var(--secondary-color) dotted;
   display: flex;
   justify-content: space-between;
@@ -51,4 +51,21 @@ h4 {
   color: var(--primary-color);
 }
 
-/**/
+/*Category Tab*/
+.categoryTab {
+  color: var(--primary-color);
+}
+.categoryTab__btn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1.6px transparent solid;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+.categoryTab__btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+}
