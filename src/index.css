@@ -53,9 +53,14 @@ h4 {
 
 /*Category Tab*/
 .categoryTab {
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   color: var(--primary-color);
 }
 .categoryTab__btn {
+  margin: 0 0.75rem;
   padding: 6px 12px;
   border-radius: 5px;
   border: 1.6px transparent solid;
@@ -71,6 +76,30 @@ h4 {
 }
 /*MenuGrid*/
 .menuGrid {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 117rem;
   display: grid;
-  gap: 3rem 2rem;
+  gap: 6rem 4rem;
+}
+/*Menu*/
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.menu__heading {
+  letter-spacing: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.menu__heading h1 {
+  margin-bottom: 0.5rem;
+}
+.menu__heading .line{
+  background-color: var(--primary-color);
+  width: 8rem;
+  height: 0.4rem;
+  margin: 0 auto;
 }
