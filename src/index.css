@@ -36,6 +36,11 @@ h4 {
   display: flex;
   gap: 2rem;
 }
+@media screen and (max-width: 1024px){
+  .foodItem {
+    flex-direction: column;
+  }
+}
 .foodItem__img {
   border: 4px var(--primary-color) solid;
   border-radius: 4px;
@@ -78,9 +83,15 @@ h4 {
 .menuGrid {
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  max-width: 117rem;
+  max-width: 120rem;
   display: grid;
   gap: 6rem 4rem;
+}
+@media screen and (max-width: 1024px) {
+.menuGrid {
+  max-width: 60rem;
+  grid-template-columns: 1fr;
+}
 }
 /*Menu*/
 .menu {
