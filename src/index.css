@@ -69,3 +69,8 @@ h4 {
   background-color: var(--primary-color);
   color: #fff;
 }
+/*MenuGrid*/
+.menuGrid {
+  display: grid;
+  gap: 3rem 2rem;
+}
