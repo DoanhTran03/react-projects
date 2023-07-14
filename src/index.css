@@ -60,3 +60,51 @@ p {
 .reviewCard .description {
   margin-top: 3.2rem;
 }
+/*----Review----*/
+.review {
+  overflow: hidden;
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  height: 450px;
+}
+.review .reviewCard {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.review .reviewCard--active {
+  opacity: 1;
+}
+.review .reviewCard--next {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.review .reviewCard--back {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.review .btn {
+  top: 210px;
+  position: absolute;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 7px;
+  border: 0;
+  background-color: hsl(210, 22%, 49%);
+  transition: all 0.2s;
+}
+.review .btn-back {
+  left: 0;
+}
+.review .btn-next {
+  right: 0;
+}
+.review .btn:hover {
+  background-color: var(--primary-color);
+}

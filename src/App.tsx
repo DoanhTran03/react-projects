@@ -1,10 +1,11 @@
+import Review from "./components/Review"
 import ReviewCard from "./components/ReviewCard"
 
 
 function App() {
   return (
     <>
-      <ReviewCard></ReviewCard>
+      <Review></Review>
     </>
   )
 }
