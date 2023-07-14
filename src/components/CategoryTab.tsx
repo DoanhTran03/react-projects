@@ -1,12 +1,14 @@
 import React from "react";
 
-const CategoryTab = () => {
+interface Props {
+  categories: String[];
+  clickHandle: (category: String) => void;
+}
+
+const CategoryTab = ({categories, clickHandle} : Props) => {
   return (
     <div className="categoryTab">
-      <button className="categoryTab__btn">All</button>
-      <button className="categoryTab__btn">Food</button>
-      <button className="categoryTab__btn">Drink</button>
-      <button className="categoryTab__btn">Average</button>
+      {categories.map(category => <button onClick={() => clickHandle(category)} className="categoryTab__btn">{category}</button>)}
     </div>
   );
 };

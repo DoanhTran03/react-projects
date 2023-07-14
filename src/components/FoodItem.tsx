@@ -1,16 +1,21 @@
 import img from "../assets/pexels-ash-376464.jpg"
-const FoodItem = () => {
+import { Dish } from "./Menu";
+
+interface Props {
+dish: Dish;
+}
+
+const FoodItem = ({dish} : Props) => {
   return (
     <div className="foodItem">
-        <img className="foodItem__img" src={img} alt="" />
+        <img className="foodItem__img" src={dish.img} alt="" />
         <div className="foodItem__content">
             <div className="heading">
-                <h3>Food name</h3>
-                <h4>Prices</h4>
+                <h3>{dish.title}</h3>
+                <h4>{dish.price}</h4>
             </div> 
             <div className="description">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Asperiores quidem nemo cumque consectetur repellendus in minus magnam totam laudantium reprehenderit.</p>
+                <p>{dish.desc}</p>
             </div>
         </div>
     </div>

@@ -42,8 +42,12 @@ h4 {
   }
 }
 .foodItem__img {
+  object-position: center;
+  object-fit: cover;
+  height: 200px;
   border: 4px var(--primary-color) solid;
   border-radius: 4px;
+  width: 100%;
 }
 .foodItem__content .heading {
   letter-spacing: 0.2rem;
@@ -55,7 +59,16 @@ h4 {
 .foodItem__content .heading span{
   color: var(--primary-color);
 }
-
+@media screen and (min-width: 425px) {
+.foodItem__img {
+  height: 350px;
+}
+@media screen and (min-width: 1024px) {
+.foodItem__img {
+  height: 250px;
+}
+}
+}
 /*Category Tab*/
 .categoryTab {
   margin-bottom: 2rem;
@@ -65,6 +78,7 @@ h4 {
   color: var(--primary-color);
 }
 .categoryTab__btn {
+  transition: all 0.2s ease;
   margin: 0 0.75rem;
   padding: 6px 12px;
   border-radius: 5px;

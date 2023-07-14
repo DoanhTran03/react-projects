@@ -1,12 +1,13 @@
 import React from 'react'
 import FoodItem from './FoodItem'
-
-const MenuGrid = () => {
+import { Dish } from './Menu'
+interface Props {
+  dishes: Dish[];
+}
+const MenuGrid = ({dishes} : Props) => {
   return (
     <div className='menuGrid'>
-        <FoodItem></FoodItem>
-        <FoodItem></FoodItem>
-        <FoodItem></FoodItem>
+        {dishes.map(dish => <FoodItem dish={dish}></FoodItem>)}
     </div>
   )
 }
