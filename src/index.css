@@ -40,8 +40,11 @@ p {
 /*----Review Card----*/
 .reviewCard {
   text-align: center;
+  transition: all 0.3s linear;
 }
 .reviewCard__img {
+  object-position: center;
+  object-fit: cover;
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -53,6 +56,8 @@ p {
   margin-bottom: 1.6rem;
 } 
 .reviewCard .icon {
+  display: grid;
+  place-items: center;
   margin-top: 1.6rem;
   font-size: 4.8rem;
   color: var(--primary-color);
@@ -73,6 +78,7 @@ p {
   position: absolute;
   width: 100%;
   top: 0;
+  opacity: 0;
 }
 .review .reviewCard--active {
   opacity: 1;

@@ -1,13 +1,19 @@
 import image from "../assets/pexels-andrea-piacquadio-774909.jpg"
 import {FaQuoteRight} from "react-icons/fa"
-const ReviewCard = () => {
+import {Review} from "./ReviewSlider";
+
+interface Props {
+    review: Review;
+    position: string;
+}
+
+const ReviewCard = ({review, position}: Props) => {
   return (
-    <div className="reviewCard">
-    <img className="reviewCard__img" src={image} alt="" />
-    <h3 className="name">Robert Keith</h3>
-    <h4 className="title">A simple guy</h4>
-    <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Obcaecati quam maxime nesciunt similique pariatur in nostrum, saepe suscipit. Quaerat, suscipit!</p>
+    <div className={"reviewCard reviewCard--" + position}>
+    <img className="reviewCard__img" src={review.image} alt="" />
+    <h3 className="name">{review.name}</h3>
+    <h4 className="title">{review.title}</h4>
+    <p className="description">{review.quote}</p>
     <span className="icon"><FaQuoteRight></FaQuoteRight></span>
     </div>
   )

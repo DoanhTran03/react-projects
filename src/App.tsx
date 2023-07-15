@@ -1,4 +1,4 @@
-import Review from "./components/Review"
+import Review from "./components/ReviewSlider"
 import ReviewCard from "./components/ReviewCard"
 
 
