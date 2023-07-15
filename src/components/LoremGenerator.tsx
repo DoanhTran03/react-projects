@@ -21,7 +21,7 @@ const LoremGenerator = () => {
         <h1 className='loremGenerator__heading'>Tired of boring lorem ipsum?</h1>
         <form onSubmit={(event) => submitHandle(event)} className="loremGenerator__form" action="">
             <label htmlFor="">Paragraphs:&nbsp;</label>
-            <input ref={numberRef} type="number" />
+            <input ref={numberRef} type="number" defaultValue={1}/>
             <button>Generate</button>
         </form>
         {shownPara.map((para,index) => <p className='loremGenerator__para' key={index}>{para}</p>)}
