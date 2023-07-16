@@ -7,10 +7,9 @@ interface Props {
 }
 
 const ColorGrid = ({colors}: Props) => {
-  console.log(colors);
   return (
     <div className='colorGrid'>
-        
+        {colors.map((color, index)=> <ColorItem index={index} color={color} key={index}></ColorItem>)}
     </div>
   )
 }

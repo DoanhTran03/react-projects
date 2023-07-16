@@ -6,8 +6,8 @@ import ColorGrid from "./ColorGrid";
 const ColorGenerator = () => {
     const [color, setColor] = useState<string>("#f15025");
     const colorValue = new Values(color);
-    const colors = colorValue.all(20);
-        
+    const colors = colorValue.all(10);
+
     const submitHandle = (event: FormEvent, numRef: RefObject<HTMLInputElement>) => {
         event.preventDefault();
         if (numRef.current !== null) setColor(numRef.current.value);

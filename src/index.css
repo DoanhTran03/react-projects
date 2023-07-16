@@ -52,9 +52,19 @@ input {
 }
 /*ColorItem*/
 .colorItem {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   padding: 1.6rem 3.2rem;
+  transition: all 0.8s ease;
+}
+.colorItem--light {
+  color: #fff;
+}
+.colorItem .alert {
+  margin-top: 2px;
+  color: #888;
+  text-transform: uppercase;
 }
 /*ColorGrid*/
 .colorGrid {
