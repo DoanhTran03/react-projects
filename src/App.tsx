@@ -1,8 +1,9 @@
+import ColorItem from "./components/ColorItem"
 import Form from "./components/Form"
 
 function App() {
   return (
-      <Form></Form>
+      <ColorItem></ColorItem>
   )
 }
 

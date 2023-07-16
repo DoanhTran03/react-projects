@@ -50,3 +50,9 @@ input {
   background-color: hsl(205, 78%, 60%);
   font-size: 1.92rem;
 }
+/*ColorItem*/
+.colorItem {
+  height: 100%;
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+}
