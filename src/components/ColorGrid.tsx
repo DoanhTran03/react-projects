@@ -1,14 +1,16 @@
 import React from 'react'
 import ColorItem from './ColorItem'
+import Values from 'values.js';
 
-const ColorGrid = () => {
+interface Props {
+  colors: Values[];
+}
+
+const ColorGrid = ({colors}: Props) => {
+  console.log(colors);
   return (
     <div className='colorGrid'>
-        <ColorItem></ColorItem>
-        <ColorItem></ColorItem>
-        <ColorItem></ColorItem>
-        <ColorItem></ColorItem>
-        <ColorItem></ColorItem>
+        
     </div>
   )
 }
