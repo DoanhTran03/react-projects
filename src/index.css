@@ -56,3 +56,10 @@ input {
   width: 100%;
   padding: 1.6rem 3.2rem;
 }
+/*ColorGrid*/
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(96px,1fr));
+  min-height: calc(100vh - 100px);
+}
