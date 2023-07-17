@@ -1,10 +1,11 @@
 import BudForm from "./components/BudForm"
+import BudItem from "./components/BudItem"
 
 function App() {
 
   return (
     <>
-      <BudForm></BudForm>
+      <BudItem></BudItem>
     </>
   )
 }

@@ -37,9 +37,9 @@ p {
   justify-content: center;
 }
 .budForm__input {
-  flex: 1 0 auto;
+  flex: 1  0 auto;
   border-color: transparent;
-  padding: 4px 16px;
+  padding: 4px 16px;  
   background-color: rgb(241, 245, 248);
 }
 .budForm__btn {
@@ -51,3 +51,32 @@ p {
   border: transparent;
   letter-spacing: 2px;
 }
+/*----BudItem---*/
+.budItem {
+  transition: all 0.2s linear;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  padding: 4px 16px;
+  background-color: white;
+  display: flex;
+}
+.budItem__name {
+  flex: 1 0 auto;
+}
+.budItem__buttons .edit {
+  color: rgb(107, 230, 117);
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+.budItem__buttons .trash {
+  color: rgb(230, 107, 107);
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
+.budItem:hover {
+  color: rgb(97, 125, 152);
+  background-color: rgb(241, 245, 248);
+}
+
