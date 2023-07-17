@@ -80,9 +80,25 @@ p {
   background-color: rgb(241, 245, 248);
 }
 .budItem .edit:hover {
-  color: hsl(125, 67%, 44%);
+  color: hsl(125, 67%, 44%) ;
 }
 .budItem__buttons .trash:hover {
   color: hsl(360, 67%, 44%);
+}
+/*----BudGrid----*/
+.budGrid__items {
+  margin-top: 3.2rem;
+}
+.budGrid__clearBtn {
+  cursor: pointer;
+  letter-spacing: 2px;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  margin: 0 auto;
+  border: 0;
+  background-color: transparent;
+  margin-top: 2rem;
+  color: hsl(360, 71%, 66%);
 }
 
