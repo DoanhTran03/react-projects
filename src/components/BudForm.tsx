@@ -1,8 +1,17 @@
+import { RefObject, useRef } from "react"
 
-const BudForm = () => {
+interface Props {
+  addItem: (taskRef:RefObject<HTMLInputElement>) => void;
+}
+
+const BudForm = ({addItem}: Props) => {
+  const taskRef = useRef<HTMLInputElement>(null);
   return (
-    <form className="budForm" action="">
-        <input className="budForm__input" type="text" name="" id="" placeholder="e.g. go to school"/>
+    <form className="budForm" action="" onSubmit={(event) => {
+      event.preventDefault();
+      addItem(taskRef)
+    }}>
+        <input ref={taskRef} className="budForm__input" type="text" name="" id="" placeholder="e.g. go to school"/>
         <button className="budForm__btn">Submit</button>
     </form>
   )

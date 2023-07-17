@@ -1,6 +1,4 @@
-import BudForm from "./components/BudForm"
-import BudGrid from "./components/BudGrid"
-import BudItem from "./components/BudItem"
+import BudGrid from "./components/BudList"
 
 function App() {
 
