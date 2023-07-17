@@ -8,15 +8,12 @@ const BudGrid = () => {
   const addItem = (taskRef: RefObject<HTMLInputElement>) => {
     if (taskRef.current !== null) setItems([...items, taskRef.current.value]);
   }
-  
+
   return (
     <div className='budGrid'>
             <BudForm addItem={addItem}></BudForm>
         <div className="budGrid__items">
-            <BudItem></BudItem>
-            <BudItem></BudItem>
-            <BudItem></BudItem>
-            <BudItem></BudItem>
+            {items.map((item, index) => <BudItem item={item} key={index}></BudItem>)}
         </div>
         <button className='budGrid__clearBtn'>Clear Item</button>
     </div>
