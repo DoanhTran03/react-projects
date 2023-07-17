@@ -9,9 +9,9 @@ const BudForm = ({addItem}: Props) => {
   return (
     <form className="budForm" action="" onSubmit={(event) => {
       event.preventDefault();
-      addItem(taskRef)
+      addItem(taskRef);
     }}>
-        <input ref={taskRef} className="budForm__input" type="text" name="" id="" placeholder="e.g. go to school"/>
+        <input id='input' ref={taskRef} className="budForm__input" type="text" name="" placeholder="e.g. go to school"/>
         <button className="budForm__btn">Submit</button>
     </form>
   )
