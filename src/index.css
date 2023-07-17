@@ -79,4 +79,10 @@ p {
   color: rgb(97, 125, 152);
   background-color: rgb(241, 245, 248);
 }
+.budItem .edit:hover {
+  color: hsl(125, 67%, 44%);
+}
+.budItem__buttons .trash:hover {
+  color: hsl(360, 67%, 44%);
+}
 
