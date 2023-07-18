@@ -101,4 +101,15 @@ p {
   margin-top: 2rem;
   color: hsl(360, 71%, 66%);
 }
-
+/*-----Alert----*/
+.alert {
+  text-align: center;
+}
+.alert--danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert--success {
+  color: #155724;
+  background: #d4edda;
+}
