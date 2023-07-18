@@ -4,7 +4,13 @@ import { RefObject, useEffect, useState } from 'react'
 import Alert from './Alert';
 
 const BudGrid = () => {
-  const [items, setItems] = useState<string[]>([]);
+  const getItemsLocal = () => {
+    let list = localStorage.getItem('list');
+    if (list) return JSON.parse(list);
+    else return '';
+  }
+
+  const [items, setItems] = useState<string[]>(getItemsLocal);
   const [isEdit, setEdit] =   useState(false);
   const [editIndex, setEditIndex] = useState(-1);
   const [alert, setAlert] = useState({message: '', flag: ''});
@@ -50,6 +56,10 @@ const BudGrid = () => {
     }, 1000)
     return () => clearTimeout(timeout);
   }, [alert]);
+
+  useEffect(()=> {
+    window.localStorage.setItem("list",JSON.stringify(items));
+  },[alert]);
 
   return (
     <div className='budGrid'>

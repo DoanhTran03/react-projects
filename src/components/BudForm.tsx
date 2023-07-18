@@ -6,10 +6,6 @@ interface Props {
   editItem: (taskRef:RefObject<HTMLInputElement>) => void;
 }
 
-const editItem = (taskRef: RefObject<HTMLInputElement>) => {
-  //setItems(map.filter((item,index) => if(index == editIndex && taskRef !== null) taskRef.current.value) else item)
-}
-
 const BudForm = ({addItem, isEdit, editItem}: Props) => {
   const taskRef = useRef<HTMLInputElement>(null);
   return (
