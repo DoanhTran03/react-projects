@@ -1,0 +1,115 @@
+*,::after,::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*----Typography----*/
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(241, 245, 248);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: rgb(16, 42, 66);
+  letter-spacing: 0.16rem;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: rgb(6, 50, 81);
+}
+button {
+  font-size: 1.36rem;
+} 
+input {
+  color: rgb(97, 125, 152);
+  font-size: 1.6rem;
+}
+p {
+  letter-spacing: 0.2rem;
+}
+/*----BudForm----*/
+.budForm {
+  transition: all 0.5s linear;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.budForm__input {
+  flex: 1  0 auto;
+  border-color: transparent;
+  padding: 4px 16px;  
+  background-color: rgb(241, 245, 248);
+}
+.budForm__btn {
+  flex: 0 0 8rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: rgb(165, 213, 248);
+  padding: 4px 4px;
+  border: transparent;
+  letter-spacing: 2px;
+}
+/*----BudItem---*/
+.budItem {
+  transition: all 0.2s linear;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  padding: 4px 16px;
+  background-color: white;
+  display: flex;
+}
+.budItem__name {
+  flex: 1 0 auto;
+}
+.budItem__buttons .edit {
+  color: rgb(107, 230, 117);
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+.budItem__buttons .trash {
+  color: rgb(230, 107, 107);
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
+.budItem:hover {
+  color: rgb(97, 125, 152);
+  background-color: rgb(241, 245, 248);
+}
+.budItem .edit:hover {
+  color: hsl(125, 67%, 44%) ;
+}
+.budItem__buttons .trash:hover {
+  color: hsl(360, 67%, 44%);
+}
+/*----BudGrid----*/
+.budGrid__items {
+  margin-top: 3.2rem;
+}
+.budGrid__clearBtn {
+  cursor: pointer;
+  letter-spacing: 2px;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  margin: 0 auto;
+  border: 0;
+  background-color: transparent;
+  margin-top: 2rem;
+  color: hsl(360, 71%, 66%);
+}
+/*-----Alert----*/
+.alert {
+  text-align: center;
+}
+.alert--danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert--success {
+  color: #155724;
+  background: #d4edda;
+}
