@@ -7,13 +7,13 @@ const NavBar = () => {
         context?.setLink(event.currentTarget);
     }  
   return (
-    <div className="navBar">
+    <div className="navBar" onMouseOut={() => {context?.setLink(null)}}>
       <div className="navBar__heading">
         <span className="icon"><PiBooksLight/></span>
         <h1>Ademo Books</h1>
       </div>
       <ul className="navBar__links">
-        <li onMouseOver={(event) => hoverHandle(event)}>
+        <li className="link" onMouseOver={(event) => hoverHandle(event)} onMouseOut={() => {context?.setLink(null)}}>
           <a href="">our project</a>
         </li>
         <li onMouseOver={(event) => hoverHandle(event)}>

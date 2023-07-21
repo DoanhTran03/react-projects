@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar"
+import SubMenu from "./components/SubMenu"
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+      <SubMenu></SubMenu>
     </>
   )
 }

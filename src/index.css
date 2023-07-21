@@ -69,3 +69,13 @@ h1 {
 .navBar__cartIcon:hover {
   color: lightblue;
 }
+/*----SubMenu----*/
+.subMenu {
+  height: fit-content;
+  position: fixed;
+  background-color: yellow;
+  transform: translateX(-50%);
+}
+.subMenu--collapsed {
+  display: none;
+}
