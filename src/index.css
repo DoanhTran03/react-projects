@@ -24,3 +24,46 @@ body {
 h1 {
   font-size: 2rem;
 }
+/*----NavBar----*/
+.navBar {
+  background-color: var(--background-color-2);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  box-shadow: 0 0 20px 2px #ddd;
+}
+.navBar__heading {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.navBar .icon {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+}
+.navBar__links {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  display: flex;
+  flex: 1;
+}
+.navBar__links a {
+  color: var(--fill-color);
+  display: block;
+  text-decoration: none;
+}
+.navBar__cartIcon {
+  padding-right: 2rem;
+  font-size: 4rem;
+}
+.navBar__links a:hover {
+  color: lightblue;
+}
+.navBar__cartIcon:hover {
+  color: lightblue;
+}
