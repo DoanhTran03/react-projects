@@ -52,7 +52,7 @@ h1 {
   flex: 1;
 }
 .navBar__links a {
-  margin-right: 3rem;
+  margin-right: 4rem;
   transition: all 0.2s ease;
   text-transform: capitalize;
   color: var(--fill-color);
@@ -73,14 +73,27 @@ h1 {
 /*----SubMenu----*/
 .subMenu {
   color: var(--background-color-2);
-  padding: 100px;
   border-radius: 4px;
   transition: all 1s ease;
   height: fit-content;
   position: fixed;
   background-color: var(--border-color);
-  transform: translateX(-50%);
+  transform: translate(-50%);
 }
 .subMenu--collapsed {
   display: none;
+}
+.subMenu::before {
+  width: 0;
+  height: 0;
+  transform: translateX(50%);
+  right: 50%;
+  top: -12px;
+  position: absolute;
+  content: '';
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 10px solid var(--border-color);
+
 }
