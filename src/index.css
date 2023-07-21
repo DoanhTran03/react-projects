@@ -53,11 +53,13 @@ h1 {
   flex: 1;
 }
 .navBar__links a {
+  text-transform: capitalize;
   color: var(--fill-color);
   display: block;
   text-decoration: none;
 }
 .navBar__cartIcon {
+  cursor: pointer;
   padding-right: 2rem;
   font-size: 4rem;
 }
