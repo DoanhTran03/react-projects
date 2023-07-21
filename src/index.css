@@ -1,0 +1,26 @@
+/*Global style*/
+:root {
+  --border-color: #E1E3F7;
+  --background-color: #F4F5FF;
+  --background-color-2: #fff;
+  --fill-color: #090B2E;
+}
+*,::after,::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*----Typography----*/
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--background-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  color: var(--fill-color);
+}
+h1 {
+  font-size: 2rem;
+}
