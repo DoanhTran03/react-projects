@@ -44,3 +44,26 @@ p {
   justify-content: flex-start;  
   align-items: start;
 }
+/*----Dark Mode----*/
+.darkMode__heading {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.darkMode__heading h1 {
+  color: var(--accent-color);
+}
+.darkMode__heading button {
+  border: 0;
+  color: var(--primary-color);
+  cursor: pointer;
+  height: fit-content;
+  background-color: var(--secondary-color-2);
+  padding: 7px 20px;
+  border-radius: 5px;
+}

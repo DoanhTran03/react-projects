@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import InfoCard from './components/InfoCard'
+import DarkMode from './components/DarkMode'
 
 function App() {
   
 
   return (
     <>
-      <InfoCard></InfoCard>
+      <DarkMode></DarkMode>
     </>
   )
 }
