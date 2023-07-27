@@ -1,3 +1,5 @@
+import moment from "moment"
+
 interface Props {
     id: number,
     title: string,
@@ -6,12 +8,14 @@ interface Props {
     snippet: string
 }
 
-const InfoCard = () => {
+const InfoCard = ({title,date,length,snippet} : Props) => {
+  
+
   return (
     <div className='infoCard'>
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, non!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, facere?</p>
+        <h3>{title}</h3>
+        <p>{`${moment(date).format('dddd Do, YYYY')} ${length} minutes ago`}</p>
+        <p>{snippet}</p>
     </div>
   )
 }

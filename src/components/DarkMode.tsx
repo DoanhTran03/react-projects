@@ -10,7 +10,7 @@ const DarkMode = () => {
             <button>Toggle</button>
         </div>
         <div className="darkMode__content">
-            {comments.map(comment => <InfoCard></InfoCard>)}
+            {comments.map(comment => <InfoCard key={comment.id} id={comment.id} title={comment.title} date={comment.date} length={comment.length} snippet={comment.snippet}></InfoCard>)}
         </div>
     </div>
   )
