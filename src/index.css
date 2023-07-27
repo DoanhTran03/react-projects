@@ -16,7 +16,7 @@
   --accent-color: rgb(40, 44, 53);
 }
 .dark-theme {
-  --primary-color: ##282c35;
+  --primary-color: #282c35;
   --secondary-color: #3587A4;
   --secondary-color-2: #c1dff0;
   --accent-color: #fff;
@@ -32,6 +32,7 @@ body{
   letter-spacing: 2px;
   font-size: 1.8rem;
   background-color: var(--primary-color);
+  transition: all 0.3s linear;
 }
 h1 {
   font-size: 3rem;
