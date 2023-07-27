@@ -2,10 +2,17 @@ import React, { useEffect, useState } from 'react'
 import comments from "../data/data"
 import InfoCard from './InfoCard'
 
+const getLocalTheme = () => {
+    const theme = localStorage.getItem('theme');
+    if (theme) return theme;
+    else return "light-theme"
+}
+
 const DarkMode = () => {
-    const [theme, setTheme] = useState("light-theme");
+    const [theme, setTheme] = useState(getLocalTheme);
     useEffect(()=>{
         document.documentElement.className = theme;
+        localStorage.setItem('theme', theme);
     },[theme])
   return (
     <div className='darkMode'>
